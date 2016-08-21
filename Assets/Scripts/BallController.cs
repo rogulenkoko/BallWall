@@ -66,10 +66,11 @@ public class BallController : MonoBehaviour {
 
     public void MoveBall()
     {
-        if (CheckScreenSide(type))
-            return;
-        if (Input.GetMouseButtonDown(0))
+       
+        if (Input.GetMouseButton(0))
         {
+            if (CheckScreenSide(type))
+                return;
             if (state == State.Left)
                 state = State.MoveToRight;
             if (state == State.Right)

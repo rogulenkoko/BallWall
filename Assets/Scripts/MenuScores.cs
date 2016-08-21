@@ -9,7 +9,7 @@ public class MenuScores : MonoBehaviour {
 	void Start () {
         maxscore.text = "Maxscore: " + PlayerPrefs.GetInt("Record");
         score.text = "Score: " + PlayerPrefs.GetInt("Score");
-        if(PlayerPrefs.GetInt("Score") == PlayerPrefs.GetInt("Score"))
+        if(PlayerPrefs.GetInt("Score") == PlayerPrefs.GetInt("Record"))
         {
             Color purple =new Color(191.000f, 68.000f, 242.000f, 255.000f);
             var sum = purple.r + purple.g + purple.b;
