@@ -17,7 +17,11 @@ public class CameraMove : MonoBehaviour {
         if (Camera.main.GetComponent<Score>().score > 15)
             speed = 4;
         if (Camera.main.GetComponent<Score>().score > 30)
-            speed = 5;
+            speed = 6;
+        if (Camera.main.GetComponent<Score>().score > 60)
+            speed = 8;
+        if (Camera.main.GetComponent<Score>().score > 100)
+            speed = 10;
         transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * speed);
     }
 }

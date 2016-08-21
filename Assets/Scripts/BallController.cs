@@ -98,6 +98,7 @@ public class BallController : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D col)
     {
         GetComponent<Rigidbody2D>().gravityScale = -1;
+        PlayerPrefs.SetInt("Score", Camera.main.GetComponent<Score>().score);
         if(PlayerPrefs.GetInt("Record") <=Camera.main.GetComponent<Score>().score)
             PlayerPrefs.SetInt("Record", Camera.main.GetComponent<Score>().score);
         SceneManager.LoadScene("gameMenu");

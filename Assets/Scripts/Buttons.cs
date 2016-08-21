@@ -20,7 +20,6 @@ public class Buttons : MonoBehaviour {
     {
         if (PlayerPrefs.GetString("Sound") == "on")
             GetComponent<AudioSource>().Play();
-        Debug.Log("asda");
         switch (gameObject.name)
         {
             case "Replay":

@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\BallController.cs" />
     <Compile Include="Assets\Scripts\Buttons.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
+    <Compile Include="Assets\Scripts\MenuScores.cs" />
     <Compile Include="Assets\Scripts\Record.cs" />
     <Compile Include="Assets\Scripts\Score.cs" />
   </ItemGroup>

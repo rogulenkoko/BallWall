@@ -7,5 +7,4 @@ public class Score : MonoBehaviour {
     public int score = 0;
     public Text GameScore;
 
-
 }
